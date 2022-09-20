@@ -3,6 +3,7 @@
 <html>
     <head>
         <title>Word Count Auto-Tracker</title>
+        <script src="count.js"></script>
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <style>
@@ -11,6 +12,22 @@
     </head>
     <body>
         <h1>Word Count Auto-Tracker</h1>
+        <p>Note: The different university styles aren't verified. They're at
+        random so far, and they also don't do anything so far. Unfortunately I
+        don't want to do any more front end today, so they won't be doing
+        anything for a while.</p>
+        <textarea id="input" oninput="count()" rows=10 cols=100></textarea>
+        <br>
+        <br>
+        <input type="radio" id="uc" name="style" onselect="uc()">
+        <label for="uc">Treat hyphens as spaces (UC style)</label>
+        <br>
+        <input type="radio" id="common" name="style" onselect="common()">
+        <label for="common">Treat hyphenated words as singular words (Common App
+            style)</label>
+        <br>
+        <br>
+        <h2 id="output"></h1>
+        <br>
     </body>
 </html>
-
