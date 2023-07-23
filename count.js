@@ -20,13 +20,20 @@ function commonCount(text) {
 }
 
 // https://stackoverflow.com/questions/25976564/onkeyup-event-in-textarea
-function count() {
+function countWords() {
     var input = document.getElementById("input").value;
     if (style == "uc")
         var wordcount = ucCount(input);
     else if (style == "common")
         var wordcount = commonCount(input);
    
+    output = document.getElementById("output");
+    output.innerHTML = wordcount;
+}
+
+function countChars() {
+				var input = document.getElementById("input").value;
+    var wordcount = input.length;
     output = document.getElementById("output");
     output.innerHTML = wordcount;
 }
