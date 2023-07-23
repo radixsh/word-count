@@ -23,17 +23,17 @@ function commonCount(text) {
 function countWords() {
     var input = document.getElementById("input").value;
     if (style == "uc")
-        var wordcount = ucCount(input);
+        var count = ucCount(input);
     else if (style == "common")
-        var wordcount = commonCount(input);
+        var count = commonCount(input);
    
-    output = document.getElementById("output");
-    output.innerHTML = wordcount;
+    output = document.getElementById("words");
+    output.innerHTML = count;
 }
 
 function countChars() {
 				var input = document.getElementById("input").value;
-    var wordcount = input.length;
-    output = document.getElementById("output");
-    output.innerHTML = wordcount;
+    var count = input.length;
+    output = document.getElementById("chars");
+    output.innerHTML = count;
 }
