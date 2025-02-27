@@ -1,11 +1,13 @@
 # Word count auto-tracker
-Concept: You type into a text box, and a word count tracker next to the text box
-live-updates every time you change the word count. No need to open a word count
-popup -- no need to choose between text editing and word-count obsessing.
+Type into the text box, and the word count live-updates every time you make any
+change. No need to open a word count popup -- no need to choose between text
+editing and word-count obsessing.
 
-Additional details:
-* There will be checkboxes at the top of the page signifying whether to split
-  words at hyphens or not and so on (I'll need to do some research to see how UC
-  vs Common App counts words and so on).
+There is a radio group allowing you to specify whether or not to split words at
+hyphens. This is because the UC undergraduate application considers hyphenated
+words as two words, while the Common Application considers hyphenated words as
+singular words.
+
+Potential future improvements:
 * Hitting Ctrl + Enter (or some other intuitive shortcut) makes a new textarea
-  and word count tracker appear and moves the cursor there.
+  that takes focus, and another word count tracker appears for that word area.
